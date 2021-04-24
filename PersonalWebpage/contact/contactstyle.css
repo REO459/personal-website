@@ -1,0 +1,119 @@
+/* Deals with the body section of the html for fonts */
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* Deals with side bar of the css */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: gray;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  margin-left: 0px;
+  z-index: 2;
+}
+
+/* Deals with the shape of the side bar */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+/* Deals with the side bar when clicked on*/
+.sidebar a.active {
+  background-color: #555;
+  color: white;
+}
+
+/* Deals with the side bar when hovered on */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Deals with the references of other pages */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* Changes the side bar when the site is smaller*/
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* Changes the side bar when the site is smaller */
+@media screen and (max-width: 450px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* Deals with the font for the heading */
+h1{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-size: 96px;
+  color: white;
+}
+
+/* Deals with the body background color */
+body {
+	background-color: #696969;
+}
+
+/* Changes the background color when smaller */
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: #bababa;
+  }
+}
+
+
+/* Deals paragraph word color and alignment */
+p {
+	text-align: center;
+	color: white;
+	font-size: 36px;
+}
+
+/* Deals with the main table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Separates the table*/
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+/* Color the other box in the table */
+tr:nth-child(even) {background-color: #a9a9a9;}
+
+/* Colors the table header */
+th {
+	color: white;
+}
+
+/* Colors the cell in a row */
+td {
+	color: white;
+}

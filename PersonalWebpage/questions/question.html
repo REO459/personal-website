@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This is the title of my website-->
+<head>
+	<meta charset="UTF-8">
+	<title>Questions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="sidebar">
+		<a href="../welcome/index.html">Home</a>
+		<a href="../interests/interest.html">Interests</a>
+		<a href="../contact/contact.html">Contact</a>
+		<a href="../about/about.html">About</a>
+		<a class="active" href="questions/question.html">Questions</a>
+	</div>
+	<h1 style="font-size:10vw;"> Omer's Personal Website</h1>
+	<link rel="stylesheet" type="text/css" href="questionstyle.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC%7CPacifico" rel="stylesheet">
+	<p> Enter this questionaire for any questions! </p>
+	<h2>Questionaire Form</h2>
+<p></p>
+
+<!-- This is the form layout-->
+	<div class="container">
+		<!-- This is where to send the completed form-->
+		<form action="mailto:omerbebo1@hotmail.com" method="post" enctype="text/plain">
+		<!-- This is the row layout-->
+		<div class="row">
+			<div class="col-25">
+			<label for="fname">First Name</label>
+		</div>
+		<div class="col-75">
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+		</div>
+	</div>
+		<div class="row">
+			<div class="col-25">
+			<label for="lname">Last Name</label>
+		</div>
+		<div class="col-75">
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		</div>
+	</div>
+		<div class="row">
+			<div class="col-25">
+			<label for="country">Country</label>
+		</div>
+	<div class="col-75">
+			<select id="country" name="country">
+			<option value="australia">Australia</option>
+			<option value="canada">Canada</option>
+			<option value="usa">USA</option>
+		</select>
+	</div>
+	</div>
+		<div class="row">
+			<div class="col-25">
+			<label for="question">Any More Questions?</label>
+		</div>
+		<div class="col-75">
+			<textarea id="question" name="question" placeholder="Write something.." style="height:200px"></textarea>
+			</div>
+		</div>
+	<div class="row">
+		<input type="submit" value="Submit">
+	</div>
+  </form>
+</div>
+</body>
+</html>

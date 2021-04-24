@@ -1,0 +1,166 @@
+/* Deals with the body section of the html for fonts */
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* Deals with side bar of the css */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: gray;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  margin-left: 0px;
+  z-index: 2;
+}
+
+/* Deals with the shape of the side bar */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+/* Deals with the side bar when clicked on*/
+.sidebar a.active {
+  background-color: #555;
+  color: white;
+}
+
+/* Deals with the side bar when hovered on */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Deals with the references of other pages */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* Changes the side bar when the site is smaller*/
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* Changes the side bar when the site is smaller */
+@media screen and (max-width: 450px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* Deals with the font for the heading */
+h1{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-size: 96px;
+  color: white;
+}
+
+/* Deals with the body background color */
+body {
+	background-color: #696969;
+}
+
+/* Changes the background color when smaller */
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: #bababa;
+  }
+}
+
+
+/* Deals paragraph word color */
+p {
+	text-align: center;
+	color: white;
+	font-size: 36px;
+}
+
+/* Sizes the border box*/
+* {
+  box-sizing: border-box;
+}
+
+/* Creates the input area of the form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* The labels inside the box*/
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* The submit button of the form */
+input[type=submit] {
+  background-color: gray;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Colors the submit button when it hovers */
+input[type=submit]:hover {
+  background-color: #bababa;
+}
+
+/* Deals with the container of the box */
+.container {
+  border-radius: 5px;
+  background-color: lightgray;
+  padding: 20px;
+}
+
+/* Deals with the grid sizing when smaller */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Deals with the grid sizing when bigger */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Displays the rows of the table */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Deals the responsive sizing of the form */
+@media screen and (max-width: 400px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
